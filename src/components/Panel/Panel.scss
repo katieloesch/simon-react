@@ -2,20 +2,50 @@
 
     width: var(--panel-size);
     height: var(--panel-size);
+    border: 8px solid black;
+
+    &:hover {
+        cursor: pointer;
+    }
 
     &#green {
         background-color: var(--green);
+        border-top-left-radius: 100%;
+
+        &.active {
+            background-color:  var(--green-active);
+            border: 8px solid var(--green-active);
+        }
     }
 
     &#red {
         background-color: var(--red);
+        border-top-right-radius: 100%;
+
+        &.active {
+            background-color:  var(--red-active);
+            border: 8px solid var(--red-active);
+        }
     }
 
     &#blue {
         background-color: var(--blue);
+        border-bottom-right-radius: 100%;
+
+        &.active {
+            background-color:  var(--blue-active);
+            border: 8px solid var(--blue-active);
+        }
     }
 
     &#yellow {
         background-color: var(--yellow);
+        border-bottom-left-radius: 100%;
+
+        &.active {
+            background-color:  var(--yellow-active);
+            border: 8px solid var(--yellow-active);
+        }
     }
+
 }

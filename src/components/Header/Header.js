@@ -5,7 +5,6 @@ const Header = () => {
   return (
     <div className='header'>
         <h1 className='h-main'>Simon</h1>
-      
     </div>
   )
 }
