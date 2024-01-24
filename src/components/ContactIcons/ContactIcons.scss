@@ -1,0 +1,72 @@
+.contact-icons {
+    // position: absolute;
+    // bottom: 8px;
+    // left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 1.2rem;
+    width: 100%;
+
+
+ 
+    @media screen and (max-width: 480px) {
+        margin-bottom: 8.5rem;
+    }
+    @media screen and (max-width: 420px) {
+        margin-bottom: 7rem;
+    }
+
+    @media screen and (max-width: 390px) {
+        margin-bottom: 2rem;
+    }
+
+
+    .contact-icon {    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-items: center;
+        transition: all 0.3s ease-in-out;
+        font-size: 1.5rem;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 1px solid var(--primary-a);
+
+        
+
+        &:hover {
+            border: 1px solid var(--primary);
+        }
+
+        a svg {
+            color: var(--primary-a);
+            width: 20px;
+            height: 20px;
+            padding-top: 3px;
+            transition: all 0.3s ease-in-out; 
+            padding-bottom: 2px;
+            scale: 1.1;
+            border-radius: 30%;
+
+            &:hover {
+                color: var(--primary);
+            }
+    
+        }
+    
+        .contact-icon-portfolio a svg{
+            scale: 0.9;
+        }
+    
+       
+    
+        
+       
+    }
+
+   
+}

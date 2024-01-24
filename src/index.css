@@ -1,13 +1,76 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* custom fonts */
+
+/*  'Darker Grotesque' designed by Gabriel Lam
+        > source: https://en.bestfonts.pro/font/darker-grotesque
+        > also available at:
+            - https://fonts.google.com/specimen/Darker+Grotesque
+            - https://www.fontsquirrel.com/fonts/darker-grotesque
+*/
+
+@font-face {
+    font-family: 'darker grotesque';
+    src: url('./assets/fonts/darkerGrotesque/darker-grotesque-semi-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+    font-family: 'darker grotesque';
+    src: url('./assets/fonts/darkerGrotesque/darker-grotesque-bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+:root {
+
+    /* game dimensions */
+    --panel-size: 15em;
+    --centre-size: 15em;
+
+    /* @media screen and (max-width: 1025px) {
+       
+    } */
+    
+    /* colours */
+    --black: rgb(0, 0, 0);
+    --white: rgb(255, 255, 255);
+
+    --bg: rgb(0, 0, 0);
+
+    --green: rgb(89, 163, 89);
+    --green-active: rgb(80, 255, 80);
+
+    --red:  rgb(200, 65, 65);
+    --red-active:  rgb(255, 0, 0);
+
+    --yellow: rgb(255, 219, 87);
+    --yellow-active: rgb(255, 255, 0);
+
+    --blue: #1F51FF;
+    --blue-active: #20d2f4;
+
+    --orange: #e68333;
+    --orange-dark:  #a44a00;
+
+    /* fonts */
+    --font-main: 'darker grotesque', Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-main);
+    color: white;
+}
+
+body {
+    background-color: var(--bg);
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
 }
