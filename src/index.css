@@ -8,6 +8,13 @@
 */
 
 @font-face {
+    font-family: 'Gajraj One';
+    src: url('./assets/fonts/gajrajOne-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'darker grotesque';
     src: url('./assets/fonts/darkerGrotesque/darker-grotesque-semi-bold.woff') format('woff');
     font-weight: normal;
@@ -53,7 +60,8 @@
     --orange-dark:  #a44a00;
 
     /* fonts */
-    --font-main: 'darker grotesque', Arial, Helvetica, sans-serif;
+    --font-main: 'Gajraj One', Arial, Helvetica, sans-serif;
+    --font-editorial: 'Gajraj One';
 }
 
 * {
