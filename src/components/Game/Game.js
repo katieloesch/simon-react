@@ -21,7 +21,7 @@ const Game = ({ mute, strict }) => {
     const yellowRef = useRef(null);
     const refs = [greenRef, redRef, blueRef, yellowRef]
 
-    const sounds = {
+    const sounds = { // source: https://adamrecvlohe.com/tutorials/2018-10-13-lets-build-a-simon-game-in-reasonreact-pt-3-sounds/
         green: new Audio("https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"),
         red: new Audio("https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"),
         blue: new Audio("https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"),

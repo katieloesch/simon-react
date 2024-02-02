@@ -1,13 +1,6 @@
 /* custom fonts */
 
-/*  'Darker Grotesque' designed by Gabriel Lam
-        > source: https://en.bestfonts.pro/font/darker-grotesque
-        > also available at:
-            - https://fonts.google.com/specimen/Darker+Grotesque
-            - https://www.fontsquirrel.com/fonts/darker-grotesque
-*/
-
-@font-face {
+@font-face { /* source: https://en.bestfonts.pro/font/gajraj-one */
     font-family: 'Gajraj One';
     src: url('./assets/fonts/gajrajOne-regular.woff') format('woff');
     font-weight: normal;
@@ -80,18 +73,13 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    
 }
 
 .btn {
     font-size: 2em;
 }
 
-
 .btn:hover {
     cursor: pointer;
     transition: 0.4s;
 }
-
-
-
