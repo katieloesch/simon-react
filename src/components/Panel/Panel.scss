@@ -3,6 +3,8 @@
     width: var(--panel-size);
     height: var(--panel-size);
     border: 8px solid black;
+    // box-shadow: inset 0px 0px 5px 5px rgba(36, 35, 35, 0.5);
+
 
     &:hover {
         cursor: pointer;

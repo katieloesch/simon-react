@@ -1,9 +1,9 @@
 import React, {forwardRef} from 'react'
 import './Panel.scss'
 
-const Panel = forwardRef(({ color, status, onClick }, ref) => (
+const Panel = forwardRef(({ color, onClick }, ref) => (
 
-    <div className={`panel ${status}`} id={color} onClick={onClick} ref={ref}></div>
+    <div className={'panel'} id={color} onClick={onClick} ref={ref}></div>
 
 ));
 
